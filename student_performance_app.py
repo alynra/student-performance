@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 from data_preprocessing import data_preprocessing
-from prediction import prediction  # Pastikan fungsi ini ada
+from prediction import prediction  
 
-# Load all encoders dari model folder (opsional jika dibutuhkan untuk dropdown)
+
 from data_preprocessing import (
     encoder_Application_mode, encoder_Course, encoder_Daytime_evening_attendance,
     encoder_Debtor, encoder_Displaced, encoder_Educational_special_needs,
