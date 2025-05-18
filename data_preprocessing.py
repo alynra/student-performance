@@ -40,23 +40,7 @@ def data_preprocessing(data):
     """
     data = data.copy()
     df = pd.DataFrame()
-    'Marital_status',
-    'Application_mode',
-    'Course',
-    'Nacionality',
-    'Mothers_qualification',
-    'Fathers_qualification',
-    'Mothers_occupation',
-    'Fathers_occupation',
-    'Previous_qualification',
-    'Daytime_evening_attendance',
-    'Gender',
-    'Displaced',
-    'Scholarship_holder',
-    'Debtor',
-    'Tuition_fees_up_to_date',
-    'International',
-    'Educational_special_needs'
+    
     df["Application_order"] = scaler_Application_order.transform(np.asarray(data["Application_order"]).reshape(-1,1))[0]
     df["Previous_qualification_grade"] = scaler_Previous_qualification_grade.transform(np.asarray(data["Previous_qualification_grade"]).reshape(-1,1))[0]
     df["Admission_grade"] = scaler_Admission_grade.transform(np.asarray(data["Admission_grade"]).reshape(-1,1))[0]
