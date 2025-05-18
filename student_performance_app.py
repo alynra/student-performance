@@ -72,16 +72,16 @@ with col3:
 col1, col2, col3 = st.columns(3)
 with col1:
     data["Application_order"] = [st.slider("Application Order", 0, 9, 1)]
-    data["Previous_qualification_grade"] = [st.slider("Previous Qualification Grade", 0.0, 200.0, 150.0)]
+    data["Previous_qualification_grade"] = [st.slider("Previous Qualification Grade", 0, 200, 150)]
 
 with col2:
-    data["Admission_grade"] = [st.slider("Admission Grade", 0.0, 200.0, 150.0)]
+    data["Admission_grade"] = [st.slider("Admission Grade", 0, 200, 150)]
     data["Age_at_enrollment"] = [st.slider("Age at Enrollment", 17, 60, 25)]
 
 with col3:
-    data["Unemployment_rate"] = [st.slider("Unemployment Rate", 0.0, 25.0, 5.0)]
-    data["Inflation_rate"] = [st.slider("Inflation Rate", 0.0, 20.0, 2.0)]
-    data["GDP"] = [st.slider("GDP", 5000.0, 50000.0, 20000.0)]
+    data["Unemployment_rate"] = [st.number_input("Unemployment Rate", 85)]
+    data["Inflation_rate"] = [st.number_input("Inflation Rate", 20)]
+    data["GDP"] = [st.number_input("GDP", 200)]
 
 # Preview input
 with st.expander("📄 View Input Data"):
