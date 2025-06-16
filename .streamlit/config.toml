@@ -1,7 +1,7 @@
 [theme]
-base="light"
-primaryColor="#865D36"              # Warna tombol utama / highlight
-backgroundColor="#A69080"           # Latar utama
-secondaryBackgroundColor="#AC8968"  # Sidebar / widget container
-textColor="#3E362E"                 # Warna teks utama
+base="dark"
+primaryColor="#2E9CCA"              # Warna utama cerah (aksen biru)
+backgroundColor="#25274D"           # Latar utama (biru tua gelap)
+secondaryBackgroundColor="#464866"  # Latar sidebar / form
+textColor="#AAABB8"                 # Teks utama terang
 font="sans serif"
